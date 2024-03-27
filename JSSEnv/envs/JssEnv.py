@@ -254,7 +254,7 @@ class JssEnv(gym.Env):
             try:
                 time_needed = self.instance_matrix[action][current_time_step_job][1]
             except:
-                time_needed = self.instance_matrix[action-1][current_time_step_job][1]
+                time_needed = self.instance_matrix[14][current_time_step_job][1]
             reward += time_needed
             self.time_until_available_machine[machine_needed] = time_needed
             self.time_until_finish_current_op_jobs[action] = time_needed
